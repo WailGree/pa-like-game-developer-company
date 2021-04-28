@@ -2,4 +2,4 @@
 
 OOP PA like in Java
 Task:
-![](task/PA-like.png)
+![](task/task.png)
