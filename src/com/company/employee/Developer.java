@@ -45,7 +45,9 @@ public class Developer extends Employee {
     @Override
     public String toString() {
         return "Developer{" +
-                "experience=" + experience +
+                "name=" + name +
+                ", experience=" + experience +
+                ", uuid=" + uuid +
                 '}';
     }
 }

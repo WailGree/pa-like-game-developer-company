@@ -4,8 +4,8 @@ import java.math.BigDecimal;
 import java.util.UUID;
 
 public abstract class Employee {
-    private String name;
-    private UUID uuid = UUID.randomUUID();
+    protected String name;
+    protected UUID uuid = UUID.randomUUID();
 
 
     public Employee(String name) {
@@ -13,7 +13,6 @@ public abstract class Employee {
     }
 
     public abstract BigDecimal calculateCost();
-
 
     @Override
     public String toString() {

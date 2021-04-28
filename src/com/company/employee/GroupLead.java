@@ -22,4 +22,12 @@ public class GroupLead extends Employee {
         cost = cost.add(value);
         return cost;
     }
+
+    @Override
+    public String toString() {
+        return "GroupLead{" +
+                "name='" + name + '\'' +
+                ", uuid=" + uuid +
+                '}';
+    }
 }

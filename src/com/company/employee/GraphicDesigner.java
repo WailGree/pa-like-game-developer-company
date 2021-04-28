@@ -13,4 +13,12 @@ public class GraphicDesigner extends Employee {
     public BigDecimal calculateCost() {
         return SALARY;
     }
+
+    @Override
+    public String toString() {
+        return "GraphicDesigner{" +
+                "name=" + name +
+                ", uuid=" + uuid +
+                '}';
+    }
 }
