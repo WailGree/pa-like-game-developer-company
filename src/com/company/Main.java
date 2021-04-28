@@ -8,7 +8,7 @@ import java.util.concurrent.ThreadLocalRandom;
 public class Main {
 
     public static void main(String[] args) {
-        example(12, 12);
+        example(6, 6);
     }
 
     private static void example(int developerAmount, int graphicDesignerAmount) {
