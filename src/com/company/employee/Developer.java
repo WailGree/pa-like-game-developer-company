@@ -19,16 +19,19 @@ public class Developer extends Employee {
 
     @Override
     public BigDecimal calculateCost() {
-        switch (experience) {
-            case JUNIOR:
-                return JUNIOR_SALARY;
-            case MIDDLE:
-                return MIDDLE_SALARY;
-            case SENIOR:
-                return SENIOR_SALARY;
-            default:
-                return BigDecimal.valueOf(0);
+        if (experience != null) {
+            switch (experience) {
+                case JUNIOR:
+                    return JUNIOR_SALARY;
+                case MIDDLE:
+                    return MIDDLE_SALARY;
+                case SENIOR:
+                    return SENIOR_SALARY;
+                default:
+                    return BigDecimal.valueOf(0);
+            }
         }
+        return BigDecimal.valueOf(0);
     }
 
     public Experience getExperience() {
